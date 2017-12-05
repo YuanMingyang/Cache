@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0IE-Hr-DyB"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gey-9a-fRT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QBQ-IL-VaJ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Gey-9a-fRT" firstAttribute="top" secondItem="QBQ-IL-VaJ" secondAttribute="bottom" id="RP2-Lm-a3h"/>
+                            <constraint firstItem="QBQ-IL-VaJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SSQ-9X-bPA"/>
+                            <constraint firstItem="QBQ-IL-VaJ" firstAttribute="top" secondItem="0IE-Hr-DyB" secondAttribute="bottom" id="Srd-6J-WPL"/>
+                            <constraint firstAttribute="trailing" secondItem="QBQ-IL-VaJ" secondAttribute="trailing" id="a45-sd-37a"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="QBQ-IL-VaJ" id="MIy-fu-F41"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="457" y="194"/>
+        </scene>
+        <!--Video View Controller-->
+        <scene sceneID="ai4-gM-0eu">
+            <objects>
+                <viewController storyboardIdentifier="VideoViewController" id="MV4-Rf-Cel" customClass="VideoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Wu-hv-Q97"/>
+                        <viewControllerLayoutGuide type="bottom" id="vVX-C9-4Uu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hfN-cW-eEe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I2O-Z8-JCH">
+                                <rect key="frame" x="0.0" y="20" width="375" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="YFu-Tw-RO4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="I2O-Z8-JCH" firstAttribute="top" secondItem="6Wu-hv-Q97" secondAttribute="bottom" id="dXO-1N-BG9"/>
+                            <constraint firstAttribute="trailing" secondItem="I2O-Z8-JCH" secondAttribute="trailing" id="hzi-QG-CNi"/>
+                            <constraint firstItem="I2O-Z8-JCH" firstAttribute="leading" secondItem="hfN-cW-eEe" secondAttribute="leading" id="sEf-dv-tY1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="videoView" destination="I2O-Z8-JCH" id="2Oa-zJ-ue9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gQc-Xf-kHr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="678" y="30"/>
+        </scene>
+    </scenes>
+</document>
